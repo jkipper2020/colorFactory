@@ -1,0 +1,89 @@
+/**
+Jonathan Kipper
+5-27-2020
+this is the styles sheet for the great color factory program which takes 8 squares and has it randomly generate
+and output the color values and the color to a table below it, and does so using javascript without .innerHTML
+ */
+body {
+    background-color: #F5F5DC;
+}
+
+h1 {
+    color: white;
+    background-color: #8A8A76;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#main table {
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+    background-color: #C0C0A4;
+    width: 800px;
+    height: 300px;
+    padding: 20px;
+}
+
+#main table td {
+    background-color: white;
+    display: inline-table;
+    text-align: center;
+    margin-left: 25px;
+    margin-top: 9px;
+    width: 150px;
+    height: 100px;
+    border: 2px solid black;
+}
+
+#buttonDiv {
+    text-align: center;
+}
+
+button {
+    font-size: 20px;
+    background-color: #DEDEBF;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#bottomTableDiv table {
+    table-layout: fixed;
+    margin-top:20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    font-weight: bold;
+    width: 500px;
+}
+
+#bottomTableDiv table {
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+#bottomTableDiv td:nth-of-type(n+3) {
+    border: 2px solid black;
+}
+
+#bottomTableDiv tr:nth-of-type(2n+1) {
+    background-color: #F5F5DC;
+    font-weight: normal;
+}
+
+#bottomTableDiv tr:nth-of-type(2n+2) {
+    background-color: #DEDEBF;
+    font-weight: normal;
+}
+
+#bottomTableDiv tr#first td {
+    border: 2px solid black;
+    padding-left: 10px;
+    background-color: #C0C0A4;
+    font-weight: bold;
+}
